@@ -14,7 +14,7 @@
   window.DCLogic = DCLogic;
 
   const HOLE = /\{\{([\s\S]*?)\}\}/g;
-  const EXACT = /^\s*\{\{([\s\S]*?)\}\}\s*$/;
+  const EXACT = /^\s*\{\{([^{}]*)\}\}\s*$/;
 
   function lookup(expr, scopes) {
     expr = expr.trim();

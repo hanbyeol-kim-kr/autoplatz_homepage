@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>전시장 안내 · 영업사원 | 폭스바겐 아우토플라츠</title>
+<meta name="description" content="폭스바겐 공식 딜러 (주)아우토플라츠 — 전시장·서비스센터 위치와 영업사원 안내">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#000000;text-decoration:none}a:hover{color:#001E50;text-decoration:underline}
+@media (max-width: 640px){.m-pad{padding:28px 24px !important}.m-img{height:240px !important}.m-fill{flex:1 1 100% !important;min-height:260px !important}.m-hero-img{height:300px !important}.m-scroll{flex-wrap:nowrap !important;overflow-x:auto;white-space:nowrap}.m-hide{display:none !important}.m-h1{font-size:36px !important}.m-hero-photo{width:100% !important;right:0 !important}.m-hero-grad{width:100% !important;background:rgba(0,30,80,0.62) !important}.m-hero-text{padding:0 40px !important}.m-hero-dots{left:24px !important;bottom:20px !important}.m-frame{left:16px !important;right:16px !important;bottom:16px !important}.m-frame-top{left:16px !important;right:16px !important}.m-card{height:auto !important}.m-card-logo{padding:28px 32px !important}}
+</style>
+
+</head>
+<body>
+<div id="app"></div>
+<template id="tpl">
+
+<div style="font-family: 'Noto Sans KR', system-ui, sans-serif; color: #000000; background: #FFFFFF; width: 100%; font-weight: 400;">
+
+<header style="background: #FFFFFF; border-bottom: 1px solid #DBE0E4;">
+<div style="max-width: 1500px; margin: 0 auto; padding: 14px 24px; min-height: 72px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px;">
+<a href="index.html" aria-label="Volkswagen Autoplatz 홈" style="display: flex; align-items: center; gap: 40px; color: #001E50; min-height: 44px;"><svg aria-hidden="true" width="40" height="40" viewBox="25 25 100 100" style="display: block; flex: none;"><path fill="#001E50" d="M75,120.4c-24.9,0-45.3-20.5-45.3-45.4c0-5.6,1-10.9,2.9-15.9l26.5,53.3c0.3,0.7,0.8,1.3,1.6,1.3 c0.8,0,1.3-0.6,1.6-1.3l12.2-27.3c0.1-0.3,0.3-0.6,0.6-0.6s0.4,0.3,0.6,0.6l12.2,27.3c0.3,0.7,0.8,1.3,1.6,1.3 c0.8,0,1.3-0.6,1.6-1.3l26.5-53.3c1.9,5,2.9,10.3,2.9,15.9C120.3,99.9,99.9,120.4,75,120.4z M75,64.7c-0.3,0-0.4-0.3-0.6-0.6 l-14.2-32c4.6-1.7,9.6-2.6,14.8-2.6c5.2,0,10.2,0.9,14.8,2.6l-14.2,32C75.4,64.5,75.3,64.7,75,64.7z M60.5,97.6 c-0.3,0-0.4-0.3-0.6-0.6l-23-46.4c4.1-6.3,9.6-11.6,16.3-15.3l16.6,36.9C70,72.8,70.5,73,71,73h8c0.6,0,1-0.1,1.3-0.8l16.6-36.9 c6.6,3.7,12.2,9,16.3,15.3L90,97c-0.1,0.3-0.3,0.6-0.6,0.6c-0.3,0-0.4-0.3-0.6-0.6l-8.7-19.8c-0.3-0.7-0.7-0.8-1.3-0.8h-8 c-0.6,0-1,0.1-1.3,0.8L61.1,97C61,97.3,60.8,97.6,60.5,97.6z M75,125c27.7,0,50-22.3,50-50c0-27.7-22.3-50-50-50 c-27.7,0-50,22.3-50,50C25,102.7,47.3,125,75,125z"></path></svg><span style="font-size: 20px; font-weight: 700; color: #001E50;">Autoplatz</span></a>
+<nav aria-label="주요 메뉴" style="display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: center; font-size: 13px;">
+<a href="models.html" style="color: #000000; padding: 6px 0;">모델</a>
+<a href="showroom.html" style="color: #000000; padding: 6px 0;">전시장</a>
+<a href="service.html" style="color: #000000; padding: 6px 0;">서비스센터</a>
+<a href="usedcar.html" style="color: #000000; padding: 6px 0;">인증 중고차</a>
+<a href="#sc" style="color: #000000; padding: 6px 0; font-weight: 700;">영업사원 안내</a>
+<a href="https://www.instagram.com/vw__autoplatz/" target="_blank" rel="noopener" aria-label="아우토플라츠 인스타그램 (새 창)" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; margin: -4px 0; color: #001E50;"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#001E50" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.4" cy="6.6" r="0.6" fill="#001E50"></circle></svg></a>
+</nav>
+</div>
+</header>
+
+<div style="max-width: 1500px; margin: 0 auto; padding: 56px 24px 0; box-sizing: border-box;">
+<nav aria-label="현재 위치" style="font-size: 12px; color: #555555; display: flex; gap: 8px;">
+<a href="index.html" style="color: #555555;">홈</a><span aria-hidden="true">›</span><span>전시장 안내</span><span aria-hidden="true">›</span><span style="color: #000000;">{{cur.title}}</span>
+</nav>
+<h1 style="margin: 20px 0 0; font-size: 44px; font-weight: 300; line-height: 1.1; color: #001E50;">{{cur.title}}</h1>
+<p style="margin: 10px 0 0; font-size: 15px; color: #555555; line-height: 1.7;">{{cur.intro}}</p>
+
+<nav aria-label="전시장 선택" style="margin-top: 32px; display: flex; flex-wrap: wrap; gap: 8px;">
+<sc-for list="{{branches}}" as="b" hint-placeholder-count="6">
+<button type="button" onClick="{{b.pick}}" aria-pressed="{{b.pressed}}" style="{{b.chip}}">{{b.title}}</button>
+</sc-for>
+</nav>
+</div>
+
+<section aria-label="지점 정보" style="max-width: 1500px; margin: 0 auto; padding: 40px 24px 0; display: flex; flex-wrap: wrap; gap: 24px;">
+<div class="m-fill" style="flex: 1 1 560px; min-width: 0; position: relative; min-height: 460px;">
+<sc-if value="{{cur.hasPhoto}}" hint-placeholder-val="{{ true }}">
+<img src="{{cur.photo}}" alt="{{cur.title}} 외관" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; display: block;">
+</sc-if>
+<sc-if value="{{cur.noPhoto}}" hint-placeholder-val="{{ false }}">
+<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #404D53; display: flex; align-items: center; justify-content: center; color: #DBE0E4; font-size: 14px;">[{{cur.title}} 외관 사진]</div>
+</sc-if>
+</div>
+<div style="flex: 1 1 420px; border: 1px solid #E3E3E3; box-sizing: border-box; padding: 40px; display: flex; flex-direction: column; gap: 22px;">
+<div style="display: flex; flex-direction: column; gap: 6px;">
+<span style="font-size: 12px; color: #555555;">주소</span>
+<span style="font-size: 16px; line-height: 1.6;">({{cur.zip}}) {{cur.addr}}</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px;">
+<span style="font-size: 12px; color: #555555;">전시장 전화</span>
+<a href="{{cur.telHref}}" style="font-size: 16px; color: #000000;">{{cur.tel}}</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px;">
+<span style="font-size: 12px; color: #555555;">운영 시간</span>
+<span style="font-size: 16px; line-height: 1.7;">월~일 09:00 ~ 20:00<br>공휴일 · 임시공휴일 · 대체공휴일 휴무</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px;">
+<span style="font-size: 12px; color: #555555;">이 건물에서 이용 가능</span>
+<div style="display: flex; flex-wrap: wrap; gap: 8px;">
+<sc-for list="{{cur.facilities}}" as="f" hint-placeholder-count="2">
+<span style="font-size: 13px; padding: 6px 14px; background: #F2F4F6;">{{f.label}}</span>
+</sc-for>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px;">
+<span style="font-size: 12px; color: #555555;">가까운 서비스센터</span>
+<span style="font-size: 15px; line-height: 1.6;">{{cur.svcName}} · <a href="{{cur.svcTelHref}}" style="color: #000000;">{{cur.svcTel}}</a></span>
+</div>
+<div style="margin-top: auto; display: flex; flex-wrap: wrap; gap: 10px;">
+<a href="{{cur.naverHref}}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border: 1px solid #8A8A8A; color: #000000; font-size: 13px;">네이버지도 길찾기</a>
+<a href="{{cur.kakaoHref}}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border: 1px solid #8A8A8A; color: #000000; font-size: 13px;">카카오맵 길찾기</a>
+<a href="{{cur.telHref}}" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; background: #141414; color: #FFFFFF; font-size: 13px;">전시장 전화 연결</a>
+</div>
+</div>
+</section>
+
+<section id="sc" aria-label="영업사원 안내" style="max-width: 1500px; margin: 0 auto; padding: 110px 24px 0;">
+<h2 style="margin: 0; font-size: 34px; font-weight: 700;">{{cur.title}} 영업사원</h2>
+<p style="margin: 14px 0 56px; font-size: 15px; color: #000000;">구매 상담은 아래 영업사원 또는 전시장 대표번호로 문의해 주세요.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 48px 40px; align-items: flex-start;">
+<sc-for list="{{cur.teams}}" as="t" hint-placeholder-count="2">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 20px;">
+<div style="display: flex; align-items: baseline; gap: 10px; padding-bottom: 12px; border-bottom: 2px solid #141414;">
+<h3 style="margin: 0; font-size: 20px; font-weight: 500;">{{t.name}}</h3>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 200px)); gap: 20px;">
+<sc-for list="{{t.members}}" as="s" hint-placeholder-count="3">
+<div style="border: 1px solid #E3E3E3; display: flex; flex-direction: column;">
+<sc-if value="{{s.hasPhoto}}" hint-placeholder-val="{{ true }}">
+<img src="{{s.photo}}" alt="{{s.name}} {{s.role}}" style="display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; object-position: center bottom; background: #EAEDF0;">
+</sc-if>
+<sc-if value="{{s.noPhoto}}" hint-placeholder-val="{{ false }}">
+<div style="aspect-ratio: 3 / 4; background: #DBE0E4; display: flex; align-items: center; justify-content: center; color: #404D53; font-size: 13px;">[프로필 사진]</div>
+</sc-if>
+<div style="padding: 20px 12px 22px; display: flex; flex-direction: column; gap: 6px; flex: 1;">
+<span style="font-size: 12px; color: #555555;">{{s.role}}</span>
+<span style="font-size: 18px; font-weight: 500;">{{s.name}}</span>
+<div style="margin-top: 8px; display: flex; align-items: baseline; font-size: 10px; letter-spacing: -0.3px; white-space: nowrap;">
+<a href="{{s.mobileHref}}" aria-label="휴대폰 {{s.phoneText}}" style="color: {{s.phoneColor}};">{{s.phoneText}}</a>
+</div>
+<sc-if value="{{s.hasEmail}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; align-items: baseline; font-size: 10px; letter-spacing: -0.3px; white-space: nowrap;">
+<a href="{{s.mailHref}}" aria-label="이메일 {{s.email}}" style="color: #141414; min-width: 0; overflow: hidden; text-overflow: ellipsis;">{{s.email}}</a>
+</div>
+</sc-if>
+<a href="{{s.callHref}}" style="margin-top: auto; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; border: 1px solid #8A8A8A; color: #000000; font-size: 13px;">{{s.callLabel}}</a>
+</div>
+</div>
+</sc-for>
+</div>
+</div>
+</sc-for>
+</div>
+</section>
+
+<section aria-label="전체 전시장" style="max-width: 1500px; margin: 0 auto; padding: 110px 24px 0;">
+<h2 style="margin: 0 0 40px; font-size: 34px; font-weight: 700;">전체 전시장</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); gap: 0 24px; border-top: 1px solid #141414;">
+<sc-for list="{{branches}}" as="c" hint-placeholder-count="7">
+<div style="padding: 22px 4px; border-bottom: 1px solid #E3E3E3; display: flex; flex-direction: column; gap: 6px;">
+<span style="font-size: 16px; font-weight: 500;">{{c.title}}</span>
+<span style="font-size: 13px; color: #555555; line-height: 1.6;">{{c.addr}}</span>
+<a href="{{c.telHref}}" style="font-size: 14px; color: #000000;">{{c.tel}}</a>
+</div>
+</sc-for>
+</div>
+</section>
+
+<div style="max-width: 1500px; margin: 0 auto; box-sizing: border-box; padding: 20px 24px 64px; font-size: 12px; line-height: 1.9; color: #404D53;">
+* 영업사원 정보는 인사 변동에 따라 사전 예고 없이 변경될 수 있습니다.
+</div>
+
+<footer style="background: #F5F5F5; color: #555555; font-size: 12px;">
+<div style="max-width: 1500px; margin: 0 auto; padding: 48px 24px 56px; display: flex; flex-direction: column; gap: 16px;">
+<nav aria-label="하단 메뉴" style="display: flex; flex-wrap: wrap; gap: 20px; font-size: 13px;">
+<a href="#top" style="color: #000000; font-weight: 700;">개인정보처리방침</a>
+<a href="#top" style="color: #555555;">이용약관</a>
+<a href="#top" style="color: #555555;">회사소개</a>
+<a href="#top" style="color: #555555;">채용</a>
+</nav>
+<p style="margin: 0; line-height: 1.9;">(주)아우토플라츠 | 대표이사 박용필 | 서울특별시 송파구 송이로 136 | 사업자등록번호 204-81-78619<br>대표전화 <a href="tel:024013382" style="color: #555555;">02-401-3382</a></p>
+<p style="margin: 0;">Copyright © Autoplatz. All rights reserved.</p>
+</div>
+</footer>
+
+</div>
+</template>
+<script src="dc-lite.js"></script>
+<script>
+
+class Component extends DCLogic {
+constructor(props) {
+super(props);
+let pick = '송파';
+try { const h = decodeURIComponent((window.location.hash || '').replace('#', '')); const v = sessionStorage.getItem('ap_branch'); if (h && h.length <= 3) pick = h; else if (v) pick = v; if (v) sessionStorage.removeItem('ap_branch'); } catch (e) {}
+this.state = { branch: pick };
+}
+renderVals() {
+// 영업사원 명단: 2026년 11월 조직도 기준 (지점장·미화·리셉·관리·주차 제외)
+// 휴대폰 번호는 mobile 칸에 입력하면 카드에 표시되고 전화하기 버튼이 해당 번호로 연결됩니다.
+const BRANCHES = [
+{ key: '송파', zip: '10282', addr: '서울특별시 송파구 송이로 136', tel: '02-6958-0800',
+intro: '서울 동남권 고객을 위한 폭스바겐 신차 전시장입니다.',
+facilities: ['신차 전시장'], svcName: '하남 서비스센터', svcTel: '02-3427-3300',
+teams: [
+{ name: '1팀', members: [
+{ name: '박수진', role: '팀장', mobile: '010-9150-1692', email: 'sjpark@vwautoplatz.co.kr', photo: 'assets/833b9f43be7a6250dfd2a761004b3f23.jpg' },
+{ name: '장성은', role: '과장', mobile: '010-9968-4315', email: 'sungeun.jang@vwautoplatz.co.kr', photo: 'assets/de373a6077c246f0f652f1fbf4e6168f.jpg' },
+{ name: '김희연', role: '대리', mobile: '010-5593-3079', email: 'heeyeon.kim@vwautoplatz.co.kr', photo: 'assets/a410be89a8af3e7f86b13960fd840575.jpg' }
+] },
+{ name: '2팀', members: [
+{ name: '백윤석', role: '팀장', mobile: '010-3644-5641', email: 'yoonsuk.baek@vwautoplatz.co.kr', photo: '' },
+{ name: '남궁환', role: '대리', mobile: '010-4454-5212', email: 'hwan.namkoung@vwautoplatz.co.kr', photo: '' },
+{ name: '박세호', role: '대리', mobile: '010-4155-2035', email: 'seho.park@vwautoplatz.co.kr', photo: 'assets/268964e9ddfbea3d4775e6e13edf5d80.jpg' },
+{ name: '김탄하', role: '사원', mobile: '010-5112-5090', email: 'tanha.kim@vwautoplatz.co.kr', photo: 'assets/cd555d62bac59abad6205b4a647ac5fc.jpg' }
+] }
+] },
+{ key: '안양', zip: '13195', addr: '경기도 안양시 동안구 시민대로 361 평촌에이스타워 2동 1층', tel: '031-396-0801',
+intro: '안양·평촌 지역 고객을 위한 폭스바겐 신차 전시장입니다.',
+facilities: ['신차 전시장'], svcName: '안양 서비스센터', svcTel: '031-360-0801',
+teams: [
+{ name: '1팀', members: [
+{ name: '송승민', role: '팀장', mobile: '010-4009-2788', email: 'seungmin.song@vwautoplatz.co.kr', photo: 'assets/f56567e639c3a757ab64ff82602209e8.jpg' },
+{ name: '박재광', role: '과장', mobile: '010-9196-3839', email: 'jaekwang.park@vwautoplatz.co.kr', photo: 'assets/6823a64faecd957391fe160fed807778.jpg' },
+{ name: '김지상', role: '과장', mobile: '010-4292-2166', email: 'jisang.kim@vwautoplatz.co.kr', photo: 'assets/6e897c26e57a3d8e90992c2d97a8eb6e.jpg' },
+{ name: '서윤미', role: '주임', mobile: '010-5674-1669', email: 'yunmi.seo@vwautoplatz.co.kr', photo: 'assets/5c26156f20510cf34a364d25901f6107.jpg' }
+] },
+{ name: '2팀', members: [
+{ name: '심준식', role: '팀장', mobile: '010-4412-2798', email: 'junsik.sim@vwautoplatz.co.kr', photo: 'assets/fbd195022b8cb80426cfa4067781a324.jpg' },
+{ name: '한아름', role: '대리', mobile: '010-4119-2166', email: 'ahreum.han@vwautoplatz.co.kr', photo: 'assets/6b2887c402905f25a522688f105f108c.jpg' }
+] }
+] },
+{ key: '판교', photo: 'assets/44604fcdfb8107312fb2ee7806f85ba7.png', zip: '12607', addr: '경기도 성남시 분당구 대왕판교로 283', tel: '031-696-0100',
+intro: '신차 · 정비 · 부품 · 인증 중고차를 한곳에서 만나는 폭스바겐 4S 거점입니다.',
+facilities: ['신차 전시장', '서비스센터', '부품', '인증 중고차'], svcName: '판교 서비스센터 (같은 건물)', svcTel: '031-696-0177',
+teams: [
+{ name: '1팀', members: [
+{ name: '김진우', role: '팀장', mobile: '010-4701-8022', email: 'jinwoo_kim@vwautoplatz.co.kr', photo: '' },
+{ name: '김관우', role: '과장', mobile: '010-8020-8853', email: 'kwanwoo.kim@vwautoplatz.co.kr', photo: 'assets/39206b9f5997cef05df769f9be294e92.jpg' },
+{ name: '이동훈', role: '사원', mobile: '010-6478-8608', email: 'donghun.lee@vwautoplatz.co.kr', photo: 'assets/32e7cb19b8a202522cf7253a43880145.jpg' }
+] },
+{ name: '2팀', members: [
+{ name: '심기환', role: '팀장', mobile: '010-8755-2565', email: 'gihwan.sim@vwautoplatz.co.kr', photo: 'assets/f5b973f3128d4d28386b1137616cd545.jpg' },
+{ name: '이영훈', role: '과장', mobile: '010-4871-5369', email: 'yeonghun.lee@vwautoplatz.co.kr', photo: 'assets/b63b93d310c6715fa328b71188235b2d.jpg' },
+{ name: '황원상', role: '과장', mobile: '010-7757-8984', email: 'wonsang.hwang@vwautoplatz.co.kr', photo: 'assets/63a8f7a292262de4fbe259ff3a56c029.jpg' },
+{ name: '박민규', role: '주임', mobile: '010-9463-4887', email: 'mingyu.park@vwautoplatz.co.kr', photo: 'assets/027834fabf98dc7a69cff1b315625550.jpg' }
+] }
+] },
+{ key: '원주', zip: '33601', addr: '강원도 원주시 북원여중길 2 (태장동 1365)', tel: '033-737-6500',
+intro: '강원 지역 고객을 위한 폭스바겐 전시장 · 서비스센터입니다.',
+facilities: ['신차 전시장', '서비스센터'], svcName: '원주 서비스센터 (같은 건물)', svcTel: '033-737-6555',
+teams: [
+{ name: '1팀', members: [
+{ name: '이재민', role: '팀장', mobile: '010-8790-4873', email: 'jaemin.lee@vwautoplatz.co.kr', photo: 'assets/7e0487d342abc3742856675ebaf465d9.jpg' },
+{ name: '고진우', role: '과장', mobile: '010-4483-2223', email: 'jinwoo.ko@vwautoplatz.co.kr', photo: 'assets/b35da459c3f0b1aa2bc6c657e4c27936.jpg' },
+{ name: '김경순', role: '대리', mobile: '010-3133-6566', email: 'kyungsoon.kim@vwautoplatz.co.kr', photo: 'assets/38dc5b3deb14b95b9910aeac55f95b11.jpg' }
+] },
+{ name: '2팀', members: [
+{ name: '허재선', role: '팀장', mobile: '010-2882-3732', email: 'jaesun.heo@vwautoplatz.co.kr', photo: 'assets/ebf1b35aafaa879694b18b9414b88bf7.jpg' },
+{ name: '구자현', role: '대리', mobile: '010-7634-6575', email: 'jahyeon.koo@vwautoplatz.co.kr', photo: 'assets/0117f1faca8b552b2f420bb23c62480c.jpg' },
+{ name: '김범주', role: '사원', mobile: '010-7644-7308', email: 'beomju.kim@vwautoplatz.co.kr', photo: '' }
+] }
+] },
+{ key: '천안', zip: '34605', addr: '충청남도 천안시 서북구 한들1로 120', tel: '041-573-9993',
+intro: '충남 지역 고객을 위한 폭스바겐 전시장 · 서비스센터입니다.',
+facilities: ['신차 전시장', '서비스센터'], svcName: '천안 서비스센터 (같은 건물)', svcTel: '041-571-9994',
+teams: [
+{ name: '1팀', members: [
+{ name: '손준', role: '팀장', mobile: '010-4596-9156', email: 'jun.son@vwautoplatz.co.kr', photo: 'assets/24ce910c9181ee545d380271f8564458.jpg' },
+{ name: '김병호', role: '부장', mobile: '010-8689-6575', email: 'byungho.kim@vwautoplatz.co.kr', photo: 'assets/43536903426c5bd3ad3c5e4a3d36ffd3.jpg' },
+{ name: '노윤섭', role: '부장', mobile: '010-5450-1390', email: 'yunsup.rho@vwautoplatz.co.kr', photo: 'assets/60e701979b8b8a97d4072f9aac1458f2.jpg' },
+{ name: '박병철', role: '차장', mobile: '010-3186-8781', email: 'byoungchul.park@vwautoplatz.co.kr', photo: 'assets/29bd4d0a4d238645baacaee3a1cc3b5d.jpg' },
+{ name: '임정훈', role: '과장', mobile: '010-2963-0432', email: 'jeonghoon.lim@vwautoplatz.co.kr', photo: 'assets/e1e9e0b338b34c680e15b4691f93edc5.jpg' }
+] }
+] },
+{ key: '대전', zip: '34603', addr: '대전광역시 유성구 월드컵대로 316 1층', tel: '042-862-9944',
+intro: '대전 · 세종 지역 고객을 위한 폭스바겐 신차 전시장입니다.',
+facilities: ['신차 전시장'], svcName: '대전 서비스센터', svcTel: '042-867-8282',
+teams: [
+{ name: '1팀', members: [
+{ name: '김성현', role: '팀장', mobile: '010-3198-4562', email: 'sunghyun.kim@vwautoplatz.co.kr', photo: 'assets/49ee7b57c21802a957a338299e778b13.jpg' },
+{ name: '이충길', role: '주임', mobile: '010-4193-4972', email: 'chungkil.lee@vwautoplatz.co.kr', photo: 'assets/a4f69231a39be10badafa4a6c40e055d.jpg' },
+{ name: '유승한', role: '주임', mobile: '010-7658-5409', email: 'seunghan.you@vwautoplatz.co.kr', photo: 'assets/f100d7d26042d85eee0dc9a306edac1b.jpg' }
+] },
+{ name: '2팀', members: [
+{ name: '김평화', role: '팀장', mobile: '010-8717-2526', email: 'pyunghwa.kim@vwautoplatz.co.kr', photo: 'assets/b843f18810d0b386f1f3f03cff7804f7.jpg' },
+{ name: '박종근', role: '부장', mobile: '010-7493-0170', email: 'jonggun.park@vwautoplatz.co.kr', photo: 'assets/7d2fae8924d6202c3ed902ecfe165c88.jpg' }
+] },
+{ name: '3팀', members: [
+{ name: '이명형', role: '팀장', mobile: '010-9555-4842', email: 'myunghyung.lee@vwautoplatz.co.kr', photo: 'assets/83e9fed3ee22e4fadf158fda53743473.jpg' },
+{ name: '박축준', role: '부장', mobile: '010-7493-0169', email: 'chukjun.park@vwautoplatz.co.kr', photo: 'assets/d9a4f1edb43f431fff7c14296cb8ab25.jpg' },
+{ name: '김용환', role: '부장', mobile: '010-4001-9489', email: 'yonghwan.kim@vwautoplatz.co.kr', photo: 'assets/03b3329b0453864b18d62327b0dd5e4e.jpg' }
+] }
+] },
+{ key: 'Approved 판교', photo: 'assets/31dbaa1eb16583cadc3f7fbc71b97497.jpg', zip: '12607', addr: '경기도 성남시 분당구 대왕판교로 283', tel: '031-726-7260',
+intro: '88가지 품질 점검을 거친 폭스바겐 공식 인증 중고차 전시장입니다. 신차 전시장 · 서비스센터와 같은 건물에 있습니다.',
+facilities: ['인증 중고차', '신차 전시장', '서비스센터', '부품'], svcName: '판교 서비스센터 (같은 건물)', svcTel: '031-696-0177',
+teams: [
+{ name: '인증 중고차팀', members: [
+{ name: '박준영', role: '차장', mobile: '010-7119-7800', email: 'junyoung.park@vwautoplatz.co.kr', photo: 'assets/2c63a8d24f1e4a63c82cf47cd20c59dc.jpg' }
+] }
+] }
+];
+const telHref = (t) => 'tel:' + t.replace(/[^0-9]/g, '');
+const chipBase = 'display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; font-size: 13px; font-family: inherit; cursor: pointer; border: 1px solid ';
+const selected = BRANCHES.find((b) => b.key === this.state.branch) || BRANCHES[2];
+const branches = BRANCHES.map((b) => ({
+title: b.key + ' 전시장',
+addr: b.addr,
+tel: b.tel,
+telHref: 'tel:' + b.tel.replace(/[^0-9]/g, ''),
+pressed: b.key === selected.key ? 'true' : 'false',
+chip: b.key === selected.key ? chipBase + '#141414; background: #141414; color: #FFFFFF;' : chipBase + '#D6D6D6; background: #FFFFFF; color: #000000;',
+pick: () => this.setState({ branch: b.key })
+}));
+const mapQ = (a) => { const m = a.match(/^(.*(?:로|길)\s?\d+(?:-\d+)?)/); return encodeURIComponent(m ? m[1] : a); };
+const cur = {
+naverHref: 'https://map.naver.com/p/search/' + mapQ(selected.addr),
+kakaoHref: 'https://map.kakao.com/link/search/' + mapQ(selected.addr),
+title: selected.key + ' 전시장',
+intro: selected.intro,
+photo: selected.photo || '',
+hasPhoto: !!selected.photo,
+noPhoto: !selected.photo,
+zip: selected.zip,
+addr: selected.addr,
+tel: selected.tel,
+telHref: telHref(selected.tel),
+svcName: selected.svcName,
+svcTel: selected.svcTel,
+svcTelHref: telHref(selected.svcTel),
+facilities: selected.facilities.map((f) => ({ label: f })),
+teams: selected.teams.map((t) => ({
+name: t.name,
+count: t.members.length,
+members: t.members.map((s) => {
+const has = !!s.mobile;
+return {
+name: s.name,
+role: s.role,
+phoneText: has ? s.mobile : '[휴대폰 번호]',
+phoneColor: has ? '#141414' : '#767676',
+callHref: telHref(selected.tel),
+callLabel: '전시장으로 전화하기',
+mobileHref: has ? telHref(s.mobile) : null,
+email: s.email || '',
+hasEmail: !!s.email,
+mailHref: s.email ? 'mailto:' + s.email : null,
+photo: s.photo || '',
+hasPhoto: !!s.photo,
+noPhoto: !s.photo
+};
+})
+}))
+};
+return { branches: branches, cur: cur };
+}
+}
+
+DC.mount(Component);
+</script>
+</body>
+</html>
